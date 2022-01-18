@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Jogo da Belha</title>
+</head>
+
+<body>
+
+    <div class="stage">
+        <h1>Jogo da velha</h1>
+        <div class="board">
+            <div class="row">
+                <div onclick="handleClick(this)" class="square" id="0"></div>
+                <div onclick="handleClick(this)" class="square" id="1"></div>
+                <div onclick="handleClick(this)" class="square" id="2"></div>
+            </div>
+            <div class="row">
+                <div onclick="handleClick(this)" class="square" id="3"></div>
+                <div onclick="handleClick(this)" class="square" id="4"></div>
+                <div onclick="handleClick(this)" class="square" id="5"></div>
+            </div>
+            <div class="row">
+                <div onclick="handleClick(this)" class="square" id="6"></div>
+                <div onclick="handleClick(this)" class="square" id="7"></div>
+                <div onclick="handleClick(this)" class="square" id="8"></div>
+            </div>
+            <div>
+            </div>
+        </div>
+        <p id="info">É a vez do jogador O</p>
+        <button onclick="restart()" id="restart">Reiniciar</button>
+    </div>
+    <script src="./game.js"></script>
+    <script src="./interface.js"></script>
+</body>
+
+</html>

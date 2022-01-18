@@ -1,0 +1,129 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+body{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+}
+
+.stage{
+    background: rgba(24, 24, 24, 0.3);
+    padding: 20px;
+    border-radius: 30px;
+    height: 80%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.board{
+    background-image: url('./assets/board.png');
+    background-size: cover;
+    border: solid 10px white;
+    border-radius: 30px;
+    margin:auto;
+}
+
+h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    flex-direction:row
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    cursor:pointer;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin: 5px;
+}
+
+.player-x{
+    background-image: url('./assets/playerX.jpeg');
+    background-size: cover;
+    height: 70%;
+    width: 70%;
+}
+
+.player-o{
+    background-image: url('./assets/playerO.jpeg');
+    background-size: cover;
+    height: 70%;
+    width: 70%;
+}
+
+#info{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 335px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#restart{
+    display: none;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#restart:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+@media (max-width: 440px)
+{
+  .stage{
+      width: 80%;
+    }
+
+  .board{
+    width: 70vw;
+    height: 70vw;
+    }
+
+    .square{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .player-x{
+        height: 70%;
+        width: 70%;
+    }
+    
+    .player-o{
+        height: 70%;
+        width: 70%;
+    }
+
+    #info{
+        width: 70vw;
+        margin: auto;
+    }
+}
